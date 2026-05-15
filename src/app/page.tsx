@@ -48,14 +48,14 @@ export default function Home() {
 
     // --- UTILS & CONSTANTS ---
     const PHOTO_ASSETS = [
-      "/images/memories/WhatsApp Image 2026-01-04 at 19.17.39.jpeg",
-      "/images/memories/WhatsApp Image 2026-01-25 at 23.31.14.jpeg",
-      "/images/memories/WhatsApp Image 2026-01-26 at 14.42.49.jpeg",
-      "/images/memories/WhatsApp Image 2026-02-15 at 11.51.42.jpeg",
-      "/images/memories/WhatsApp Image 2026-02-18 at 18.35.53.jpeg",
-      "/images/memories/WhatsApp Image 2026-02-23 at 12.15.29.jpeg",
-      "/images/memories/WhatsApp Image 2026-03-04 at 22.51.37.jpeg",
-      "/images/memories/WhatsApp Image 2026-03-12 at 23.35.31.jpeg"
+      "/images/memories/WhatsApp Image 2026-05-15 at 14.41.09.jpeg",
+      "/images/memories/WhatsApp Image 2026-05-15 at 14.41.10 (1).jpeg",
+      "/images/memories/WhatsApp Image 2026-05-15 at 14.41.10 (2).jpeg",
+      "/images/memories/WhatsApp Image 2026-05-15 at 14.41.10 (3).jpeg",
+      "/images/memories/WhatsApp Image 2026-05-15 at 14.41.10.jpeg",
+      "/images/memories/WhatsApp Image 2026-05-15 at 14.41.11.jpeg",
+      "/images/memories/WhatsApp Image 2026-05-15 at 14.41.12 (1).jpeg",
+      "/images/memories/WhatsApp Image 2026-05-15 at 14.41.12.jpeg"
     ];
 
     const FALLBACK_PHOTOS = [
@@ -68,30 +68,27 @@ export default function Home() {
     // --- UTILS & CONSTANTS ---
     const WORLD_LENGTH = 15000; 
     const LYRICS_DATA = [
-      { time: 203.8, text: "Andai dulu kau tak pergi dari hidupku" },
-      { time: 209.2, text: "Takkan mungkin kutemui cinta yang kini kumiliki" },
-      { time: 217.8, text: "Cinta yang menerima kekurangan" },
-      { time: 224.1, text: "Dan merubah caraku memandang dunia" },
-      { time: 230.5, text: "Andai dulu kupaksakan t'rus bersamamu" },
-      { time: 237.9, text: "Belum tentu kisah kita berdua berakhir bahagia" },
-      { time: 245.2, text: "Kisah yang mendewasakan kita berdua" },
-      { time: 250.8, text: "Meski lewat luka..." },
-      { time: 257.5, text: "Satu hal yang kini aku mengerti" },
-      { time: 263.8, text: "Meski berat bibir ini mengucap" },
-      { time: 269.2, text: "Akan selalu ada kata 'Selamat'" },
-      { time: 274.8, text: "Dalam setiap kata 'Selamat tinggal'" },
-      { time: 279.5, text: "..." },
-      { time: 286.2, text: "Samar kudengar..." },
-      { time: 289.5, text: "Di tempat ini..." },
-      { time: 292.8, text: "Suara yang selalu kukenal, itu suaramu..." },
-      { time: 295.5, text: "Di tempat pertama aku menemukanmu..." }
+      { time: 2.0, text: "Oh oh..." },
+      { time: 27.0, text: "Kan ku arungi tujuh laut samudra" },
+      { time: 32.0, text: "Kan ku daki pegunungan himalaya" },
+      { time: 40.0, text: "Apapun kan ku lakukan tuk dirimu sayang" },
+      { time: 45.0, text: "Oh penjaga hatiku oh..." },
+      { time: 51.5, text: "Karna bersamamu semua terasa indah" },
+      { time: 58.0, text: "Gundah gulana hatiku pun hancur sirna" },
+      { time: 64.0, text: "Janji ku tak kan ku lepas..." },
+      { time: 67.0, text: "Wahai kau bidadariku dari surga" },
+      { time: 72.0, text: "Tuk selamanya..." },
+      { time: 78.5, text: "Tuk selamanya..." },
+      { time: 84.0, text: "Tuk selamanya..." }
     ];
 
     const PALETTES = {
-      morning: { skyT: "#87CEFA", skyB: "#FFE4B5", sun: "#FFF9D2", mount: "#5A7280", groundT: "#8BC34A", groundB: "#D2B48C" },
-      afternoon: { skyT: "#4A90E2", skyB: "#E0F6FF", sun: "#FFFFFF", mount: "#4A6270", groundT: "#689F38", groundB: "#C19A6B" },
-      sunset: { skyT: "#1A237E", skyB: "#FF8A65", sun: "#FFD54F", mount: "#3A4550", groundT: "#558B2F", groundB: "#A07855" },
-      night: { skyT: "#0A1128", skyB: "#1C2A48", sun: "#E2E8F0", mount: "#1A2228", groundT: "#2B3A2C", groundB: "#3E2723" }
+      ocean: { skyT: "#001F3F", skyB: "#0077BE", sun: "#FFF9D2", mount: "#005B96", groundT: "#003366", groundB: "#001F3F", type: 'ocean' },
+      himalaya: { skyT: "#E1F5FE", skyB: "#B3E5FC", sun: "#FFFFFF", mount: "#FFFFFF", groundT: "#FFFFFF", groundB: "#E0E0E0", type: 'snow' },
+      morning: { skyT: "#87CEFA", skyB: "#FFE4B5", sun: "#FFF9D2", mount: "#50C878", groundT: "#8BC34A", groundB: "#D2B48C" },
+      afternoon: { skyT: "#4A90E2", skyB: "#E0F6FF", sun: "#FFFFFF", mount: "#2E8B57", groundT: "#689F38", groundB: "#C19A6B" },
+      sunset: { skyT: "#1A237E", skyB: "#FF8A65", sun: "#FFD54F", mount: "#1B5E20", groundT: "#558B2F", groundB: "#A07855" },
+      night: { skyT: "#0A1128", skyB: "#1C2A48", sun: "#E2E8F0", mount: "#062A08", groundT: "#2B3A2C", groundB: "#3E2723" }
     };
 
     const PHOTO_TITLES = ["Senyummu", "Kenangan", "Bersamamu", "Sempurna", "Tak Terlupakan", "Kisah Kita", "Selamanya", "Cinta"];
@@ -108,6 +105,7 @@ export default function Home() {
         return array;
       },
       hexToRgb: (color: string) => {
+        if (!color) return { r: 0, g: 0, b: 0 };
         if (color.startsWith('rgb')) {
           const m = color.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)/);
           return m ? { r: parseInt(m[1], 10), g: parseInt(m[2], 10), b: parseInt(m[3], 10) } : { r: 0, g: 0, b: 0 };
@@ -173,11 +171,43 @@ export default function Home() {
           this.walkCycle = Utils.lerp(this.walkCycle, 0, 0.1);
         }
       }
-      draw(ctx: CanvasRenderingContext2D, cameraX: number, groundY: number, isPortrait: boolean) {
+      draw(ctx: CanvasRenderingContext2D, cameraX: number, groundY: number, isPortrait: boolean, palette?: any, progress: number = 0) {
         const screenX = this.x - cameraX;
-        if (screenX < -200 || screenX > ctx.canvas.width + 200) return;
+        if (screenX < -300 || screenX > ctx.canvas.width + 300) return;
+        
         ctx.save();
-        ctx.translate(screenX, groundY);
+        
+        // 0. RAFT (if in ocean phase)
+        if (palette && palette.type === 'ocean') {
+          ctx.save();
+          // Position raft at the base of the cat
+          ctx.translate(screenX, groundY);
+          const rw = 120, rh = 16;
+          ctx.fillStyle = "#5D4037"; // Dark wood
+          ctx.fillRect(-rw/2, -8, rw, rh);
+          // Plank details
+          ctx.strokeStyle = "#3E2723";
+          ctx.lineWidth = 2;
+          for(let i=-2; i<=2; i++) {
+            ctx.beginPath(); ctx.moveTo(i * 22, -8); ctx.lineTo(i * 22, 8); ctx.stroke();
+          }
+          // Slight bobbing for the raft
+          ctx.restore();
+        }
+
+        // 1. CLIMBING EFFECT (Himalaya Phase: 0.35 - 0.7)
+        let yOffset = 0;
+        let rotationOffset = 0;
+        
+        if (progress >= 0.35 && progress < 0.7) {
+           // Simulate effort/climbing tilt: vertical bounce and slight forward lean
+           yOffset = Math.sin(this.walkCycle * 2) * 6 - 8;
+           rotationOffset = -0.12; 
+        }
+
+        ctx.translate(screenX, groundY + yOffset);
+        if (rotationOffset) ctx.rotate(rotationOffset);
+
         const baseScale = isPortrait ? 0.8 : 1.1;
 
         const isMoving = this.state === 'walking';
@@ -192,12 +222,14 @@ export default function Home() {
 
         ctx.scale(this.facing * baseScale, baseScale);
 
-        // 1. Dynamic Ground Shadow
-        ctx.fillStyle = "rgba(27, 43, 30, 0.15)";
-        ctx.beginPath();
-        const shadowWidth = isMoving ? 24 + Math.abs(Math.sin(cycle)) * 5 : 26;
-        ctx.ellipse(-3, 0, shadowWidth, 5, 0, 0, Math.PI * 2);
-        ctx.fill();
+        // 2. Dynamic Ground Shadow (Only if not in ocean)
+        if (!palette || palette.type !== 'ocean') {
+          ctx.fillStyle = "rgba(27, 43, 30, 0.15)";
+          ctx.beginPath();
+          const shadowWidth = isMoving ? 24 + Math.abs(Math.sin(cycle)) * 5 : 26;
+          ctx.ellipse(-3, 0, shadowWidth, 5, 0, 0, Math.PI * 2);
+          ctx.fill();
+        }
 
         // Lift body space up from ground
         ctx.translate(0, bounce - 22);
@@ -334,12 +366,7 @@ export default function Home() {
           ctx.beginPath(); ctx.ellipse(5, -2, 2.5, 4, 0, 0, Math.PI * 2); ctx.fill();
           ctx.beginPath(); ctx.ellipse(13, -2, 2.5, 4, 0, 0, Math.PI * 2); ctx.fill();
 
-          // Double sparkling catchlights for that premium Deekay/Anime feel
-          ctx.fillStyle = "#FFFFFF";
-          ctx.beginPath(); ctx.arc(4.5, -4, 1.2, 0, Math.PI * 2); ctx.fill();
-          ctx.beginPath(); ctx.arc(12.5, -4, 1.2, 0, Math.PI * 2); ctx.fill();
-          ctx.beginPath(); ctx.arc(5.5, -1, 0.6, 0, Math.PI * 2); ctx.fill();
-          ctx.beginPath(); ctx.arc(13.5, -1, 0.6, 0, Math.PI * 2); ctx.fill();
+          // Standard eyes without extra catchlights
         }
 
         // Soft Blush
@@ -373,34 +400,22 @@ export default function Home() {
         const roseRot = isMoving ? Math.sin(cycle * 2) * 0.1 : 0;
         ctx.rotate(roseRot);
 
-        ctx.fillStyle = "#E63946"; // Vibrant Red
+        ctx.fillStyle = "#FF69B4"; // Pink Rose
         ctx.beginPath();
         ctx.arc(0, -3, 4, 0, Math.PI * 2);
         ctx.arc(-3, 1, 4, 0, Math.PI * 2);
         ctx.arc(3, 1, 4, 0, Math.PI * 2);
         ctx.fill();
 
-        ctx.fillStyle = "#A82030"; // Inner depth
+        ctx.fillStyle = "#D81B60"; // Inner depth
         ctx.beginPath(); ctx.arc(0, -1, 3, 0, Math.PI * 2); ctx.fill();
 
-        ctx.fillStyle = "#FFA3B1"; // Highlight
+        ctx.fillStyle = "#FFB7C5"; // Highlight
         ctx.beginPath(); ctx.ellipse(0, -2, 1.5, 0.8, 0, 0, Math.PI * 2); ctx.fill();
 
         ctx.restore(); // Return from rose
 
         ctx.restore(); // Return to world 
-
-        // Dynamic Floating Emotes (Hearts/Sparkles) when walking nearby
-        if (isMoving && Math.random() < 0.04) {
-          ctx.save();
-          ctx.translate(screenX + Utils.rand(-15, 15), groundY - 70 - Math.random() * 20);
-          const s = 1 + Math.sin(Date.now() / 150) * 0.2;
-          ctx.scale(s, s);
-          ctx.fillStyle = "rgba(255, 117, 143, 0.8)";
-          ctx.font = "14px Arial";
-          ctx.fillText(this.type === 'male' ? "✨" : "💕", 0, 0);
-          ctx.restore();
-        }
       }
     }
 
@@ -465,7 +480,7 @@ export default function Home() {
         ctx.fill();
       }
 
-      draw(ctx: CanvasRenderingContext2D, cameraX: number, progress: number, palette: any) {
+      draw(ctx: CanvasRenderingContext2D, cameraX: number, progress: number, palette: any, groundY: number) {
         const { width, height } = ctx.canvas;
         const skyGrad = ctx.createLinearGradient(0, 0, 0, height * 0.8);
         skyGrad.addColorStop(0, palette.skyT);
@@ -473,9 +488,12 @@ export default function Home() {
         ctx.fillStyle = skyGrad;
         ctx.fillRect(0, 0, width, height);
 
-        if (progress > 0.2) {
+        const isOcean = palette.type === 'ocean';
+        const isSnow = palette.type === 'snow';
+
+        if (progress > 0.2 || isOcean) {
           ctx.save();
-          const starFade = Utils.clamp((progress - 0.2) * 2.5, 0, 1);
+          const starFade = isOcean ? 0.6 : Utils.clamp((progress - 0.2) * 2.5, 0, 1);
           ctx.fillStyle = "#FFF";
           this.stars.forEach(s => {
             const alpha = 0.2 + Math.sin(s.twinkle) * 0.8;
@@ -485,15 +503,16 @@ export default function Home() {
           ctx.restore();
         }
 
-        const orbitRadius = width * 0.45;
+        const isPortrait = this.engine.isPortrait;
+        const orbitRadius = isPortrait ? width * 0.75 : width * 0.45;
         const centerX = width * 0.5;
-        const centerY = height * 0.9;
+        const centerY = isPortrait ? height * 0.75 : height * 0.9;
         const angle = Math.PI - (progress * Math.PI);
         const objX = centerX + Math.cos(angle) * orbitRadius;
         const objY = centerY - Math.sin(angle) * orbitRadius;
 
         ctx.save();
-        const isNight = progress > 0.6;
+        const isNight = progress > 0.8 || isOcean;
         const bodyRadius = isNight ? 45 : 65;
         ctx.fillStyle = palette.sun;
         ctx.beginPath(); ctx.arc(objX, objY, bodyRadius, 0, Math.PI * 2); ctx.fill();
@@ -521,48 +540,54 @@ export default function Home() {
           ctx.restore();
         });
 
-        const groundY = height * (this.engine.isPortrait ? 0.8 : 0.85);
-
         ctx.save();
         this.hills.forEach(m => {
           let parallax = m.layer === 3 ? 0.05 : (m.layer === 2 ? 0.15 : 0.3);
           const screenX = m.x - (cameraX * parallax);
           if (screenX < -m.w || screenX > width + m.w) return;
-          const depthFactor = m.layer / 3;
-          const baseColor = Utils.lerpColor(palette.mount, palette.skyB, depthFactor * 0.5);
-          const shadowMix = isNight ? 0.3 : 0.12;
-          const lightMix = isNight ? 0.05 : 0.15;
-          const lightColor = Utils.lerpColor(baseColor, "#FFFFFF", lightMix);
-          const shadowColor = Utils.lerpColor(baseColor, "#1A2E1D", shadowMix);
-          const peakX = screenX + m.w * m.peakOffset;
-          const peakY = groundY - m.h;
-          ctx.fillStyle = lightColor;
-          ctx.beginPath(); ctx.moveTo(screenX, groundY);
-          ctx.quadraticCurveTo(screenX + m.w * (m.peakOffset * 0.3), groundY - m.h * 0.15, peakX, peakY);
-          ctx.lineTo(peakX, groundY); ctx.fill();
-          ctx.fillStyle = shadowColor;
-          ctx.beginPath(); ctx.moveTo(peakX, peakY);
-          ctx.quadraticCurveTo(screenX + m.w * (m.peakOffset + (1 - m.peakOffset) * 0.7), groundY - m.h * 0.15, screenX + m.w, groundY);
-          ctx.lineTo(peakX, groundY); ctx.fill();
-          ctx.strokeStyle = Utils.lerpColor(lightColor, "#FFFFFF", 0.4);
-          ctx.lineWidth = m.layer === 1 ? 2 : 1;
-          ctx.beginPath(); ctx.moveTo(screenX, groundY);
-          ctx.quadraticCurveTo(screenX + m.w * (m.peakOffset * 0.3), groundY - m.h * 0.15, peakX, peakY);
-          ctx.stroke();
+          
+          if (isOcean) {
+            ctx.fillStyle = palette.mount;
+            ctx.beginPath();
+            ctx.moveTo(screenX, groundY);
+            const waveH = m.h * 0.2;
+            const time = Date.now() * 0.001;
+            ctx.quadraticCurveTo(screenX + m.w/2, groundY - waveH + Math.sin(time + m.x * 0.01) * 15, screenX + m.w, groundY);
+            ctx.fill();
+          } else {
+            const depthFactor = m.layer / 3;
+            const baseColor = isSnow ? "#FFFFFF" : Utils.lerpColor(palette.mount, palette.skyB, depthFactor * 0.4);
+            const shadowColor = isSnow ? "#CFD8DC" : Utils.lerpColor(baseColor, "#0D2110", progress > 0.6 ? 0.4 : 0.15);
+            
+            const peakX = screenX + m.w * m.peakOffset;
+            const peakY = groundY - m.h;
+
+            const hillGrad = ctx.createLinearGradient(peakX, peakY, peakX, groundY);
+            hillGrad.addColorStop(0, baseColor);
+            hillGrad.addColorStop(1, Utils.lerpColor(baseColor, palette.groundT, 0.2));
+            ctx.fillStyle = hillGrad;
+
+            ctx.beginPath();
+            ctx.moveTo(screenX, groundY);
+            ctx.quadraticCurveTo(screenX + m.w * 0.2, groundY - m.h * 0.3, peakX, peakY);
+            ctx.quadraticCurveTo(screenX + m.w * 0.8, groundY - m.h * 0.3, screenX + m.w, groundY);
+            ctx.fill();
+
+            ctx.fillStyle = shadowColor;
+            ctx.beginPath();
+            ctx.moveTo(peakX, peakY);
+            ctx.quadraticCurveTo(peakX + m.w * 0.2, peakY + m.h * 0.5, screenX + m.w, groundY);
+            ctx.lineTo(peakX, groundY);
+            ctx.fill();
+          }
         });
         ctx.restore();
-
-        if (palette.fog) {
-          const fogGrad = ctx.createLinearGradient(0, groundY - 120, 0, groundY);
-          fogGrad.addColorStop(0, "rgba(255,255,255,0)"); fogGrad.addColorStop(1, palette.fog);
-          ctx.fillStyle = fogGrad; ctx.fillRect(0, groundY - 120, width, 120);
-        }
 
         ctx.fillStyle = Utils.lerpColor(palette.groundT, palette.skyB, 0.12);
         ctx.beginPath(); ctx.moveTo(0, height);
         for (let i = 0; i <= width + 80; i += 40) {
           const wx = i + cameraX * 0.8;
-          const wy = (groundY - 18) + Math.sin(wx * 0.002) * 20 + Math.cos(wx * 0.005) * 10;
+          const wy = (groundY - 18) + Math.sin(wx * 0.002 + (isOcean ? Date.now()*0.002 : 0)) * 20 + Math.cos(wx * 0.005) * 10;
           ctx.lineTo(i, wy);
         }
         ctx.lineTo(width + 80, height); ctx.fill();
@@ -571,7 +596,7 @@ export default function Home() {
         ctx.beginPath(); ctx.moveTo(0, height);
         for (let i = 0; i <= width + 80; i += 40) {
           const wx = i + cameraX * 0.9;
-          const wy = (groundY - 6) + Math.sin(wx * 0.003) * 15 + Math.cos(wx * 0.007) * 8;
+          const wy = (groundY - 6) + Math.sin(wx * 0.003 + (isOcean ? Date.now()*0.003 : 0)) * 15 + Math.cos(wx * 0.007) * 8;
           ctx.lineTo(i, wy);
         }
         ctx.lineTo(width + 80, height); ctx.fill();
@@ -580,10 +605,10 @@ export default function Home() {
         groundGrad.addColorStop(0, palette.groundT); groundGrad.addColorStop(1, palette.groundB);
         ctx.fillStyle = groundGrad; ctx.fillRect(0, groundY, width, height - groundY);
 
-        ctx.fillStyle = isNight ? "rgba(255,255,255,0.04)" : "rgba(255, 255, 255, 0.15)";
+        ctx.fillStyle = (progress > 0.6 || isOcean) ? "rgba(255,255,255,0.08)" : "rgba(255, 255, 255, 0.15)";
         ctx.beginPath(); ctx.moveTo(0, groundY);
         for (let i = 0; i <= width + 80; i += 40) {
-          const wx = i + cameraX; const wy = groundY + Math.sin(wx * 0.004) * 8; ctx.lineTo(i, wy);
+          const wx = i + cameraX; const wy = groundY + Math.sin(wx * 0.004 + (isOcean ? Date.now()*0.004 : 0)) * 8; ctx.lineTo(i, wy);
         }
         for (let i = width + 80; i >= -40; i -= 40) {
           const wx = i + cameraX; const wy = groundY + 30 + Math.sin(wx * 0.004) * 20; ctx.lineTo(i, wy);
@@ -608,8 +633,8 @@ export default function Home() {
       grasses: any[] = [];
       flowers: any[] = [];
       stones: any[] = [];
-      magicFlowers: any[] = []; // Bunga interaktif baru
-      climaxParticles: any[] = []; // Partikel klimaks baru
+      magicFlowers: any[] = [];
+      climaxParticles: any[] = [];
 
       constructor(engine: Engine) {
         this.engine = engine;
@@ -617,25 +642,24 @@ export default function Home() {
       }
       
       triggerClimax(intensity: number) {
-        // Tambahkan partikel hati dan sakura dalam jumlah besar
-        if (Math.random() < intensity) {
+        const mobileScale = this.engine.isPortrait ? 0.4 : 1.0;
+        if (Math.random() < intensity * mobileScale) {
           this.climaxParticles.push({
-            x: this.engine.cameraX + Math.random() * this.engine.width * 1.2,
-            y: -20,
-            vx: Utils.rand(-3, 3),
-            vy: Utils.rand(2, 5),
-            size: Utils.rand(5, 12),
+            x: Math.random() * this.engine.width,
+            y: -50,
+            vx: Utils.rand(-2, 2),
+            vy: Utils.rand(3, 6),
+            size: Utils.rand(6, 14),
             rot: Math.random() * Math.PI * 2,
             rotV: Utils.rand(-0.1, 0.1),
-            type: Math.random() > 0.3 ? 'sakura' : 'heart',
-            color: Math.random() > 0.5 ? "#FFB7C5" : "#FF69B4" // Soft & Deep Pink
+            type: Math.random() > 0.4 ? 'sakura' : 'heart',
+            color: Math.random() > 0.5 ? "#FFB7C5" : "#FF69B4"
           });
         }
       }
 
       spawnMagicFlower(screenX: number, screenY: number) {
-        // Konversi koordinat layar ke koordinat dunia
-        const worldX = screenX + (this.engine.cameraX * 1.0); // Asumsi layer 1.0 (utama)
+        const worldX = screenX + (this.engine.cameraX * 1.0);
         this.magicFlowers.push({
           x: worldX,
           y: screenY,
@@ -651,7 +675,6 @@ export default function Home() {
       generateFlora() {
         let x = -500;
         const LAYERS = [0.8, 0.9, 1.0, 1.2];
-        // Generate dense forest layout
         while (x < WORLD_LENGTH + 1000) {
           const clusterSize = Math.floor(Utils.rand(1, 4));
           for (let i = 0; i < clusterSize; i++) {
@@ -667,39 +690,39 @@ export default function Home() {
           x += Utils.rand(200, 500);
         }
 
-        // Ground cover (Grass, Flowers, Stones) - Optimized for high FPS
-        for (let i = 0; i < 400; i++) {
+        for (let i = 0; i < 600; i++) {
           this.grasses.push({
             x: Utils.rand(-500, WORLD_LENGTH + 1500),
             z: LAYERS[Math.floor(Math.random() * LAYERS.length)],
-            h: Utils.rand(8, 16),
+            h: Utils.rand(8, 18),
             sway: Math.random() * Math.PI * 2
           });
         }
-        for (let i = 0; i < 60; i++) {
+        
+        const FLOWER_COLORS = ['pink', 'white', 'yellow', 'purple'];
+        for (let i = 0; i < 300; i++) {
           this.flowers.push({
             x: Utils.rand(-500, WORLD_LENGTH + 1500),
             z: LAYERS[Math.floor(Math.random() * LAYERS.length)],
-            type: Math.random() > 0.5 ? 'pink' : 'white',
+            type: FLOWER_COLORS[Math.floor(Math.random() * FLOWER_COLORS.length)],
             sway: Math.random() * Math.PI * 2
           });
         }
-        for (let i = 0; i < 40; i++) {
+
+        for (let i = 0; i < 50; i++) {
           this.stones.push({
             x: Utils.rand(-500, WORLD_LENGTH + 1500),
             z: LAYERS[Math.floor(Math.random() * LAYERS.length)],
-            s: Utils.rand(3, 8)
+            s: Utils.rand(3, 10)
           });
         }
 
-        // Pre-sort all by depth for Z-indexing
         this.trees.sort((a, b) => b.z - a.z);
         this.grasses.sort((a, b) => b.z - a.z);
         this.flowers.sort((a, b) => b.z - a.z);
         this.stones.sort((a, b) => b.z - a.z);
       }
       update() {
-        // Falling petals logic (Standard)
         if (Math.random() < 0.25) {
           this.petals.push({
             x: this.engine.cameraX + Math.random() * this.engine.width * 1.5,
@@ -713,7 +736,6 @@ export default function Home() {
           if (p.y > this.engine.height || p.x < this.engine.cameraX - 100) this.petals.splice(i, 1);
         }
 
-        // Magic flowers logic
         for (let i = this.magicFlowers.length - 1; i >= 0; i--) {
           let f = this.magicFlowers[i];
           if (f.size < f.targetSize) f.size += f.bloomSpeed * f.targetSize;
@@ -721,7 +743,6 @@ export default function Home() {
           if (f.life <= 0) this.magicFlowers.splice(i, 1);
         }
 
-        // Climax particles logic (Blizzard)
         for (let i = this.climaxParticles.length - 1; i >= 0; i--) {
           let p = this.climaxParticles[i];
           p.x += p.vx;
@@ -730,18 +751,18 @@ export default function Home() {
           if (p.y > this.engine.height + 20) this.climaxParticles.splice(i, 1);
         }
       }
-      drawLayer(ctx: CanvasRenderingContext2D, cameraX: number, palette: any, minZ: number, maxZ: number) {
-        const groundY = this.engine.height * (this.engine.isPortrait ? 0.8 : 0.85);
+      drawLayer(ctx: CanvasRenderingContext2D, cameraX: number, palette: any, minZ: number, maxZ: number, groundY: number) {
         const wind = Date.now() * 0.002;
-        const isNight = palette.skyT === "#0A1128";
+        const isNight = palette.skyT === "#0A1128" || palette.type === 'ocean';
+        const isOcean = palette.type === 'ocean';
+        const isSnow = palette.type === 'snow';
 
-        // Draw Climax Particles (Top Most Layer)
         if (maxZ >= 3.0) {
           this.climaxParticles.forEach(p => {
             ctx.save();
-            ctx.translate(p.x - cameraX * 1.1, p.y);
+            ctx.translate(p.x, p.y);
             ctx.rotate(p.rot);
-            ctx.fillStyle = p.color;
+            ctx.fillStyle = isSnow ? "#FFF" : p.color;
             
             if (p.type === 'heart') {
               const s = p.size * 0.6;
@@ -751,7 +772,6 @@ export default function Home() {
               ctx.bezierCurveTo(-s*2, s, -s, -s, 0, s);
               ctx.fill();
             } else {
-              // Sakura petal shape
               ctx.beginPath();
               ctx.ellipse(0, 0, p.size, p.size * 0.5, 0, 0, Math.PI * 2);
               ctx.fill();
@@ -760,18 +780,14 @@ export default function Home() {
           });
         }
 
-        // Draw magic flowers (hanya di layer utama)
-        if (minZ <= 1.0 && maxZ >= 1.0) {
+        if (minZ <= 1.0 && maxZ >= 1.0 && !isOcean) {
           this.magicFlowers.forEach(f => {
             const screenX = f.x - cameraX;
             if (screenX < -50 || screenX > this.engine.width + 50) return;
-            
             ctx.save();
             ctx.translate(screenX, f.y);
             ctx.rotate(f.rotation);
             ctx.globalAlpha = f.life;
-            
-            // Draw stylized magic flower petals
             ctx.fillStyle = f.color;
             for (let i = 0; i < 5; i++) {
               ctx.rotate((Math.PI * 2) / 5);
@@ -779,151 +795,93 @@ export default function Home() {
               ctx.ellipse(f.size * 0.6, 0, f.size, f.size * 0.4, 0, 0, Math.PI * 2);
               ctx.fill();
             }
-            // Center
             ctx.fillStyle = "#FFD1D9";
-            ctx.beginPath();
-            ctx.arc(0, 0, f.size * 0.3, 0, Math.PI * 2);
-            ctx.fill();
-            
+            ctx.beginPath(); ctx.arc(0, 0, f.size * 0.3, 0, Math.PI * 2); ctx.fill();
             ctx.restore();
           });
         }
 
         const drawElement = (arr: any[], drawFn: any) => {
-          arr.forEach(el => {
+          for (let i = 0; i < arr.length; i++) {
+            const el = arr[i];
             if (el.z < minZ || el.z > maxZ) return;
             const screenX = el.x - (cameraX * el.z);
-            if (screenX < -150 || screenX > this.engine.width + 150) return;
-
+            if (screenX < -150 || screenX > this.engine.width + 150) continue;
             const wx = el.x;
             let yPos = groundY;
-
-            // Map each object to its EXACT ground surface based on its Z-layer
-            if (el.z === 0.8) {
-              yPos = (groundY - 18) + Math.sin(wx * 0.002) * 20 + Math.cos(wx * 0.005) * 10;
-            } else if (el.z === 0.9) {
-              yPos = (groundY - 6) + Math.sin(wx * 0.003) * 15 + Math.cos(wx * 0.007) * 8;
-            } else if (el.z === 1.0) {
-              // Snaps to the path or flat ground surface
-              yPos = groundY;
-            } else if (el.z === 1.2) {
-              yPos = groundY + 70 + Math.sin(wx * 0.002) * 30;
-            }
-
-            ctx.save();
-            ctx.translate(screenX, yPos);
-            drawFn(el, screenX);
-            ctx.restore();
-          });
+            if (el.z === 0.8) yPos = (groundY - 18) + Math.sin(wx * 0.002 + (isOcean ? Date.now()*0.002 : 0)) * 20 + Math.cos(wx * 0.005) * 10;
+            else if (el.z === 0.9) yPos = (groundY - 6) + Math.sin(wx * 0.003 + (isOcean ? Date.now()*0.003 : 0)) * 15 + Math.cos(wx * 0.007) * 8;
+            else if (el.z === 1.2) yPos = groundY + 70 + Math.sin(wx * 0.002) * 30;
+            drawFn(el, screenX, yPos);
+          }
         };
 
-        // 1. STONES
-        ctx.fillStyle = isNight ? "#31232c" : "#a88e99";
-        drawElement(this.stones, (el: any) => {
-          ctx.beginPath();
-          ctx.moveTo(-el.s * 2, 0);
-          ctx.quadraticCurveTo(-el.s, -el.s, 0, -el.s * 1.2);
-          ctx.quadraticCurveTo(el.s * 1.5, -el.s * 0.8, el.s * 2, 0);
-          ctx.fill();
+        if (!isOcean) {
+          ctx.fillStyle = isSnow ? "#B0BEC5" : (isNight ? "#31232c" : "#a88e99");
+          drawElement(this.stones, (el: any, x: number, y: number) => {
+            ctx.beginPath();
+            ctx.moveTo(x - el.s * 2, y);
+            ctx.quadraticCurveTo(x - el.s, y - el.s, x, y - el.s * 1.2);
+            ctx.quadraticCurveTo(x + el.s * 1.5, y - el.s * 0.8, x + el.s * 2, y);
+            ctx.fill();
+          });
 
-          // Highlight spec
-          ctx.fillStyle = "rgba(255,255,255,0.15)";
-          ctx.beginPath(); ctx.ellipse(-el.s * 0.5, -el.s * 0.5, el.s * 0.5, el.s * 0.3, -Math.PI * 0.1, 0, Math.PI * 2); ctx.fill();
-        });
+          if (!isSnow) {
+            drawElement(this.grasses, (el: any, x: number, y: number) => {
+              if (!Sprites.grass) return;
+              const sway = Math.sin(wind + el.sway) * 5;
+              ctx.drawImage(Sprites.grass, x + sway - 10, y - 30, 20, 30 * (el.h / 15));
+            });
 
-        // 2. GRASS
-        ctx.strokeStyle = Utils.lerpColor(palette.groundT, "#4CAF50", 0.15);
-        ctx.lineWidth = 1.5;
-        ctx.lineCap = "round";
-        drawElement(this.grasses, (el: any) => {
-          const sway = Math.sin(wind + el.sway) * (el.h * 0.4);
-          ctx.beginPath();
-          ctx.moveTo(0, 0); ctx.quadraticCurveTo(sway * 0.5, -el.h * 0.5, sway, -el.h);
-          ctx.moveTo(-2, 0); ctx.quadraticCurveTo((sway - 2) * 0.5, -el.h * 0.3, sway - 4, -el.h * 0.6);
-          ctx.stroke();
-        });
-
-        // 3. FLOWERS
-        drawElement(this.flowers, (el: any) => {
-          const sway = Math.sin(wind + el.sway) * 4;
-          ctx.strokeStyle = "#7CB342";
-          ctx.lineWidth = 1.5;
-          ctx.beginPath(); ctx.moveTo(0, 0); ctx.quadraticCurveTo(sway * 0.5, -8, sway, -14); ctx.stroke();
-
-          ctx.translate(sway, -14);
-          ctx.fillStyle = el.type === 'pink' ? (isNight ? "#8B5A2B" : "#FF9800") : (isNight ? "#9E939B" : "#FFFFFF");
-          for (let i = 0; i < 4; i++) {
-            ctx.rotate(Math.PI / 2);
-            ctx.beginPath(); ctx.ellipse(2, 0, 3, 2, 0, 0, Math.PI * 2); ctx.fill();
-          }
-          ctx.fillStyle = isNight ? "#8B7F39" : "#FFCA28"; // Yellow center
-          ctx.beginPath(); ctx.arc(0, 0, 1.5, 0, Math.PI * 2); ctx.fill();
-        });
-
-        // 4. TREES
-        drawElement(this.trees, (t: any) => {
-          const sway = Math.sin(wind * 0.5 + t.swayOffset) * 0.03;
-          ctx.rotate(sway);
-          ctx.scale(t.scale, t.scale);
-
-          if (t.z < 0.9) ctx.globalAlpha = 0.6 + (t.z - 0.7) * 2.0;
-
-          if (t.type === 'pine') {
-            ctx.fillStyle = isNight ? "#0a1215" : "#1A3A36";
-            ctx.fillRect(-4, -40, 8, 40);
-            ctx.beginPath(); ctx.moveTo(0, -160); ctx.lineTo(-30, -60); ctx.lineTo(30, -60); ctx.fill();
-            ctx.beginPath(); ctx.moveTo(0, -110); ctx.lineTo(-40, -20); ctx.lineTo(40, -20); ctx.fill();
-
-            ctx.fillStyle = "rgba(255,255,255,0.06)";
-            ctx.beginPath(); ctx.moveTo(0, -160); ctx.lineTo(0, -60); ctx.lineTo(30, -60); ctx.fill();
-          } else {
-            const trunkColor = isNight ? "#31232c" : "#6D524C";
-            ctx.fillStyle = trunkColor;
-            ctx.beginPath(); ctx.moveTo(-6, 0); ctx.quadraticCurveTo(-4, -60, -1, -100); ctx.lineTo(1, -100); ctx.quadraticCurveTo(4, -60, 6, 0); ctx.fill();
-
-            ctx.lineWidth = 2.5; ctx.strokeStyle = trunkColor;
-            ctx.beginPath(); ctx.moveTo(0, -70); ctx.quadraticCurveTo(-20, -80, -25, -90); ctx.stroke();
-            ctx.beginPath(); ctx.moveTo(0, -50); ctx.quadraticCurveTo(20, -70, 25, -80); ctx.stroke();
-
-            const baseGreen = isNight ? "#1B3A1E" : "#4CAF50";
-            const highlightGreen = isNight ? "#2E5933" : "#81C784";
-            const shadowGreen = isNight ? "#0D2110" : "#388E3C";
-
-            const drawPuff = (cx: number, cy: number, r: number, color: string) => { ctx.fillStyle = color; ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2); ctx.fill(); };
-
-            // Shadows
-            drawPuff(-20, -75, 30, shadowGreen);
-            drawPuff(20, -75, 30, shadowGreen);
-            drawPuff(0, -60, 25, shadowGreen);
-
-            // Base
-            drawPuff(0, -100, 48, baseGreen);
-            drawPuff(-30, -90, 35, baseGreen);
-            drawPuff(30, -90, 35, baseGreen);
-
-            // Highlights
-            drawPuff(-10, -105, 25, highlightGreen);
-            drawPuff(15, -95, 20, highlightGreen);
+            drawElement(this.flowers, (el: any, x: number, y: number) => {
+              const sway = Math.sin(wind + el.sway) * 4;
+              ctx.strokeStyle = "#7CB342";
+              ctx.lineWidth = 1.5;
+              ctx.beginPath(); ctx.moveTo(x, y); ctx.quadraticCurveTo(x + sway * 0.5, y - 8, x + sway, y - 14); ctx.stroke();
+              ctx.save();
+              ctx.translate(x + sway, y - 14);
+              ctx.fillStyle = el.type === 'pink' ? (isNight ? "#8B5A2B" : "#FF9800") : (isNight ? "#9E939B" : "#FFFFFF");
+              for (let i = 0; i < 4; i++) {
+                ctx.rotate(Math.PI / 2);
+                ctx.beginPath(); ctx.ellipse(2, 0, 3, 2, 0, 0, Math.PI * 2); ctx.fill();
+              }
+              ctx.fillStyle = isNight ? "#8B7F39" : "#FFCA28";
+              ctx.beginPath(); ctx.arc(0, 0, 1.5, 0, Math.PI * 2); ctx.fill();
+              ctx.restore();
+            });
           }
 
-          // Blend root into ground shadow
-          ctx.fillStyle = "rgba(27, 43, 30, 0.15)";
-          ctx.beginPath(); ctx.ellipse(0, 0, 15, 4, 0, 0, Math.PI * 2); ctx.fill();
-        });
+          drawElement(this.trees, (t: any, x: number, y: number) => {
+            if (isSnow && t.type !== 'pine') return;
+            const sway = Math.sin(wind * 0.5 + t.swayOffset) * 0.03;
+            ctx.save();
+            ctx.translate(x, y);
+            ctx.rotate(sway);
+            ctx.scale(t.scale, t.scale);
+            if (t.z < 0.9) ctx.globalAlpha = 0.6 + (t.z - 0.7) * 2.0;
+            if (t.type === 'pine') {
+              if (Sprites.pine) ctx.drawImage(Sprites.pine, -50, -200);
+              if (isSnow) {
+                 ctx.fillStyle = "rgba(255,255,255,0.8)";
+                 ctx.beginPath(); ctx.moveTo(-30, -140); ctx.lineTo(0, -180); ctx.lineTo(30, -140); ctx.fill();
+              }
+            } else {
+              if (Sprites.sakura) ctx.drawImage(Sprites.sakura, -75, -200);
+            }
+            ctx.restore();
+            ctx.fillStyle = "rgba(27, 43, 30, 0.15)";
+            ctx.beginPath(); ctx.ellipse(x, y, 15, 4, 0, 0, Math.PI * 2); ctx.fill();
+          });
+        }
 
-        // Draw falling petals only on foreground to avoid messy background overlapping
         if (maxZ > 1.0) {
-          ctx.fillStyle = isNight ? "rgba(168, 32, 48, 0.6)" : "rgba(230, 57, 70, 0.8)";
+          ctx.fillStyle = isSnow ? "#FFFFFF" : (isNight ? "rgba(168, 32, 48, 0.6)" : "rgba(230, 57, 70, 0.8)");
           this.petals.forEach(p => {
             ctx.save();
             ctx.translate(p.x - cameraX * 1.1, p.y);
             ctx.rotate(p.rot);
             ctx.beginPath();
-            ctx.moveTo(0, -p.size);
-            ctx.quadraticCurveTo(p.size, -p.size, p.size, 0);
-            ctx.quadraticCurveTo(p.size, p.size, 0, p.size);
-            ctx.quadraticCurveTo(-p.size, p.size, -p.size, 0);
-            ctx.quadraticCurveTo(-p.size, -p.size, 0, -p.size);
+            ctx.ellipse(0, 0, p.size, p.size * 0.6, 0, 0, Math.PI * 2);
             ctx.fill();
             ctx.restore();
           });
@@ -945,11 +903,45 @@ export default function Home() {
         PHOTO_ASSETS.forEach((url, i) => {
           const img = new Image(); 
           img.src = url;
-          // Fallback logic if local image fails
+          const photoObj: any = { 
+            x: 4000 + (i * step), 
+            y: this.engine.height * 0.35, 
+            rot: Utils.rand(-10, 10), 
+            img: img, 
+            swing: Math.random() * Math.PI,
+            cache: null 
+          };
+          
+          img.onload = () => {
+            const fw = 280, fh = fw * 1.25;
+            const can = document.createElement('canvas');
+            can.width = fw + 20; can.height = fh + 20; // Room for shadow
+            const c = can.getContext('2d');
+            if (c) {
+              c.translate(10, 5);
+              // Shadow
+              c.fillStyle = "rgba(0,0,0,0.15)";
+              c.fillRect(5, 10, fw, fh);
+              // Frame
+              c.fillStyle = "#fffcfc";
+              c.fillRect(0, 0, fw, fh);
+              // Tape
+              c.fillStyle = "rgba(129, 199, 132, 0.6)";
+              c.fillRect(fw/2 - 25, -10, 50, 15);
+              // Photo
+              const iw = fw * 0.9, ih = fh - (fw * 0.3);
+              c.drawImage(img, (fw-iw)/2, 15, iw, ih);
+              // Sepia
+              c.fillStyle = "rgba(255, 180, 100, 0.15)";
+              c.fillRect((fw-iw)/2, 15, iw, ih);
+            }
+            photoObj.cache = can;
+          };
+
           img.onerror = () => {
             img.src = FALLBACK_PHOTOS[i % FALLBACK_PHOTOS.length];
           };
-          this.photos.push({ x: 4000 + (i * step), y: this.engine.height * 0.35, rot: Utils.rand(-10, 10), img: img, swing: Math.random() * Math.PI });
+          this.photos.push(photoObj);
         });
       }
       update(playerX: number) {
@@ -957,7 +949,6 @@ export default function Home() {
         const currentTime = audio ? audio.currentTime : 0;
         let currentText = "";
         
-        // Better sync logic: show the latest lyric that has passed its start time
         for (let i = 0; i < LYRICS_DATA.length; i++) {
           if (currentTime >= LYRICS_DATA[i].time) {
             currentText = LYRICS_DATA[i].text;
@@ -981,35 +972,21 @@ export default function Home() {
           const fh = fw * 1.25;
           const sy = (this.engine.height * 0.38) + Math.sin(p.swing) * 15;
           if (screenX < -fw || screenX > this.engine.width + fw) return;
+          
           ctx.save();
           ctx.translate(screenX, sy);
           ctx.rotate(p.rot * Math.PI / 180);
 
-          // Fast manual drop-shadow (Replaces expensive shadowBlur)
-          ctx.fillStyle = "rgba(27, 43, 30, 0.25)";
-          ctx.fillRect(-fw / 2 + 10, -fh / 2 + 15, fw, fh);
-
-          ctx.fillStyle = "#fffcfc";
-          ctx.fillRect(-fw / 2, -fh/2, fw, fh);
-
-          // Decorative tape or pin concept (cuter washi tape)
-          ctx.fillStyle = "rgba(129, 199, 132, 0.6)";
-          ctx.fillRect(-25, -fh / 2 - 10, 50, 15);
-
-          if (p.img.complete) {
-            const iw = fw * 0.9, ih = fh - (fw * 0.3);
-            ctx.drawImage(p.img, -iw / 2, -fh / 2 + 15, iw, ih);
-
-            // Fast sepia/warm overlay (Replaces expensive ctx.filter)
-            ctx.fillStyle = "rgba(255, 180, 100, 0.15)";
-            ctx.fillRect(-iw / 2, -fh / 2 + 15, iw, ih);
+          if (p.cache) {
+            ctx.drawImage(p.cache, -fw/2 - 10, -fh/2 - 5, fw + 20, fh + 20);
+          } else {
+            // Fallback while loading
+            ctx.fillStyle = "#fff"; ctx.fillRect(-fw/2, -fh/2, fw, fh);
           }
 
-          // Romantic caption heartbeat
+          // Heart heartbeat remains dynamic
           const hbScale = 1 + Math.sin(Date.now() / 300) * 0.1;
-          ctx.fillStyle = "#4CAF50";
-          ctx.font = "24px Arial";
-          ctx.textAlign = "center";
+          ctx.fillStyle = "#4CAF50"; ctx.font = "24px Arial"; ctx.textAlign = "center";
           ctx.save();
           ctx.translate(0, fh / 2 - 20);
           ctx.scale(hbScale, hbScale);
@@ -1049,6 +1026,7 @@ export default function Home() {
       constructor() {
         this.canvas = document.getElementById('worldCanvas') as HTMLCanvasElement;
         this.ctx = this.canvas.getContext('2d') as CanvasRenderingContext2D;
+        initSprites(this.ctx);
         this.player = new Cat('male');
         this.npc = new Cat('female');
         this.env = new Environment(this);
@@ -1067,8 +1045,18 @@ export default function Home() {
         this.isPortrait = this.height > this.width;
       }
       bindEvents() {
-        document.getElementById('btn-start')?.addEventListener('click', () => {
-          this.partnerName = "itaa";
+        const startBtn = document.getElementById('btn-start');
+        if (startBtn) startBtn.onclick = () => {
+          this.partnerName = "liaa";
+          
+          // --- SYNCHRONOUS CLOCK RESET FIX ---
+          this.lastAudioTime = 0;
+          this.lastSyncTime = performance.now();
+          this.preciseTime = 0;
+          this.progress = 0;
+          this.isEnded = false;
+          this.isCutscene = false;
+          
           const splash = document.getElementById('splash-screen');
           if (splash) splash.style.opacity = '0';
           setTimeout(() => { if (splash) splash.style.display = 'none'; }, 2000);
@@ -1076,7 +1064,7 @@ export default function Home() {
           const audio = document.getElementById('bgm') as HTMLAudioElement;
           if (audio) {
             audio.volume = 0; // Start at zero for fade in
-            audio.currentTime = 200.5; // Start at the LAST chorus
+            audio.currentTime = 0; // Start from beginning for the new song
             audio.play().then(() => {
               this.lastAudioTime = audio.currentTime;
               this.lastSyncTime = performance.now();
@@ -1089,21 +1077,24 @@ export default function Home() {
                   clearInterval(fadeIn);
                 }
               }, 100);
-              console.log("Audio playing with fade-in from the last chorus");
+              console.log("Audio playing with fade-in from start");
             }).catch((err) => {
               console.warn("Audio play failed, retrying on interaction...", err);
               const retryPlay = () => {
                 audio.volume = 1.0;
-                audio.currentTime = 200.5;
+                audio.currentTime = 0;
                 audio.play();
                 window.removeEventListener('click', retryPlay);
               };
               window.addEventListener('click', retryPlay);
             });
           }
-          this.isRunning = true;
-          this.loop();
-        });
+          
+          if (!this.isRunning) {
+            this.isRunning = true;
+            this.loop();
+          }
+        };
 
         // Trigger Bunga Saat Klik/Tap
         const handleInteraction = (e: any) => {
@@ -1151,6 +1142,25 @@ export default function Home() {
         window.addEventListener('mousemove', handlePointerMove);
         window.addEventListener('touchmove', handlePointerMove, { passive: false });
 
+        // --- Sparkle Trail Logic ---
+        const handleSparkle = (e: any) => {
+          if (this.isRunning) return; // Only on splash screen
+          const touch = e.touches ? e.touches[0] : e;
+          const x = touch.clientX;
+          const y = touch.clientY;
+          
+          const sparkle = document.createElement('div');
+          sparkle.className = 'sparkle-trail';
+          sparkle.innerHTML = ['✨', '⭐', '💫', '🌸', '💖'][Math.floor(Math.random() * 5)];
+          sparkle.style.left = `${x}px`;
+          sparkle.style.top = `${y}px`;
+          sparkle.style.color = `hsl(${Utils.rand(330, 360)}, 100%, 70%)`;
+          document.body.appendChild(sparkle);
+          setTimeout(() => sparkle.remove(), 800);
+        };
+        window.addEventListener('mousemove', handleSparkle);
+        window.addEventListener('touchstart', handleSparkle);
+
         // TAB FOCUS FIX: Re-sync animation when returning to the tab
         document.addEventListener('visibilitychange', () => {
           if (document.visibilityState === 'visible') {
@@ -1166,11 +1176,31 @@ export default function Home() {
       getPalette() {
         const p = this.progress;
         let c1: any, c2: any, f: number;
-        if (p < 0.33) { c1 = PALETTES.morning; c2 = PALETTES.afternoon; f = p / 0.33; }
-        else if (p < 0.66) { c1 = PALETTES.afternoon; c2 = PALETTES.sunset; f = (p - 0.33) / 0.33; }
-        else { c1 = PALETTES.sunset; c2 = PALETTES.night; f = (p - 0.66) / 0.34; }
+        
+        const OCEAN_END = 0.3;
+        const HIMALAYA_START = 0.4;
+        const HIMALAYA_END = 0.6;
+        const PRESENT_START = 0.7;
+
+        if (p < OCEAN_END) { 
+          c1 = PALETTES.ocean; c2 = PALETTES.ocean; f = 0; 
+        } else if (p < HIMALAYA_START) {
+          c1 = PALETTES.ocean; c2 = PALETTES.himalaya; f = (p - OCEAN_END) / (HIMALAYA_START - OCEAN_END);
+        } else if (p < HIMALAYA_END) {
+          c1 = PALETTES.himalaya; c2 = PALETTES.himalaya; f = 0;
+        } else if (p < PRESENT_START) {
+          c1 = PALETTES.himalaya; c2 = PALETTES.afternoon; f = (p - HIMALAYA_END) / (PRESENT_START - HIMALAYA_END);
+        } else if (p < 0.85) {
+          c1 = PALETTES.afternoon; c2 = PALETTES.sunset; f = (p - PRESENT_START) / 0.15;
+        } else {
+          c1 = PALETTES.sunset; c2 = PALETTES.night; f = (p - 0.85) / 0.15;
+        }
+
         const pal: any = {};
-        for (let key in c1) pal[key] = Utils.lerpColor(c1[key], c2[key], f);
+        for (let key in c1) {
+          if (key === 'type') pal[key] = f < 0.5 ? c1[key] : c2[key];
+          else pal[key] = Utils.lerpColor(c1[key], c2[key], f);
+        }
         return pal;
       }
       update() {
@@ -1185,15 +1215,15 @@ export default function Home() {
           const dt = Math.max(0, (performance.now() - this.lastSyncTime) / 1000);
           this.preciseTime = this.lastAudioTime + dt;
 
-          const startTime = 200.5;
-          const totalDuration = audio.duration || 310;
+          const startTime = 0;
+          const totalDuration = audio.duration || 75; // Approx duration
           
           const oldX = this.player.x;
           this.progress = Utils.clamp((this.preciseTime - startTime) / (totalDuration - startTime - 3.5), 0, 1);
           
-          // STOP DISTANCE: 45px (Nempel)
+          const stopDist = this.isPortrait ? 120 : 60; 
           const targetX = this.progress * WORLD_LENGTH;
-          this.player.x = Math.min(targetX, WORLD_LENGTH - 45);
+          this.player.x = Math.min(targetX, WORLD_LENGTH - stopDist);
           
           const deltaX = Math.abs(this.player.x - oldX);
           
@@ -1221,31 +1251,48 @@ export default function Home() {
               }, 4000);
             }
           } else {
-            // NORMAL WALK: Use a fixed speed scale when moving to avoid 'slowmo' feel
-            // Only walk if moving, use standard speed scale 1.2
-            this.player.update(deltaX > 0.01, 1.2); 
+            const isOcean = this.progress < 0.35;
+            const isWalking = !isOcean && deltaX > 0.01;
+            this.player.update(isWalking, 1.2); 
           }
         }
         
-        const targetCamX = Math.max(0, this.player.x - this.width * 0.3);
+        const camOffset = this.isPortrait ? 0.5 : 0.3;
+        const targetCamX = Math.max(0, this.player.x - this.width * camOffset);
         this.cameraX = Utils.lerp(this.cameraX, targetCamX, 0.12);
         this.env.update();
         this.flora.update();
         this.story.update(this.preciseTime); 
         this.npc.update(false);
-        const fill = document.getElementById('progress-fill');
-        if (fill) fill.style.width = `${this.progress * 100}%`;
       }
+      
+      getCurrentGroundY() {
+        const p = this.progress;
+        const baseGY = this.height * (this.isPortrait ? 0.8 : 0.85);
+        const peakGY = this.height * 0.45; // Elevation peak
+        
+        if (p < 0.3) return baseGY;
+        if (p < 0.5) { // Climbing phase
+          const f = (p - 0.3) / 0.2;
+          return Utils.lerp(baseGY, peakGY, f);
+        }
+        if (p < 0.7) { // Descending phase
+          const f = (p - 0.5) / 0.2;
+          return Utils.lerp(peakGY, baseGY, f);
+        }
+        return baseGY;
+      }
+
       draw() {
         const palette = this.getPalette();
+        const gy = this.getCurrentGroundY();
         this.ctx.clearRect(0, 0, this.width, this.height);
-        this.env.draw(this.ctx, this.cameraX, this.progress, palette);
-        this.flora.drawLayer(this.ctx, this.cameraX, palette, 0.0, 1.0);
+        this.env.draw(this.ctx, this.cameraX, this.progress, palette, gy);
+        this.flora.drawLayer(this.ctx, this.cameraX, palette, 0.0, 1.0, gy);
         this.story.drawPhotos(this.ctx, this.cameraX);
-        const gy = this.height * (this.isPortrait ? 0.8 : 0.85);
-        this.npc.draw(this.ctx, this.cameraX, gy, this.isPortrait);
-        this.player.draw(this.ctx, this.cameraX, gy, this.isPortrait);
-        this.flora.drawLayer(this.ctx, this.cameraX, palette, 1.0001, 3.0);
+        this.npc.draw(this.ctx, this.cameraX, gy, this.isPortrait, palette);
+        this.player.draw(this.ctx, this.cameraX, gy, this.isPortrait, palette, this.progress);
+        this.flora.drawLayer(this.ctx, this.cameraX, palette, 1.0001, 3.0, gy);
       }
       showEndScreen() {
         this.isEnded = true;
@@ -1280,7 +1327,7 @@ export default function Home() {
 
         let envelopeOpened = false;
 
-        envContainer?.addEventListener('click', () => {
+        if (envContainer) envContainer.onclick = () => {
           if (envelopeOpened) return;
           envelopeOpened = true;
           envElement?.classList.add('open');
@@ -1306,13 +1353,101 @@ export default function Home() {
               }
             }, 1000);
           }, 4500);
-        });
+        };
 
         let wishSent = false;
-        wishBtn?.addEventListener('click', (e) => {
+        let cakeBlown = false;
+
+        const handleCakeBlow = () => {
+          if (!wishSent || cakeBlown) return;
+          cakeBlown = true;
+          cakeFlame?.classList.add('out');
+          
+          if (cakeHint) {
+            const finalWish = wishInput.value.trim() || "Bahagia selamanya";
+            cakeHint.innerText = `Permohonanmu: "${finalWish}" sedang terbang ke langit... ✨`;
+            cakeHint.style.color = "var(--primary-color)";
+          }
+
+          setTimeout(() => {
+            if (cakeContainer) cakeContainer.style.opacity = '0';
+            if (interactiveCake) interactiveCake.style.transform = 'scale(0.8)';
+            
+            setTimeout(() => {
+              if (cakeContainer) cakeContainer.style.display = 'none';
+              
+              // SHOW GIFT BOX INSTEAD OF GALLERY IMMEDIATELY
+              if (giftReveal) {
+                giftReveal.style.display = 'flex';
+                void giftReveal.offsetWidth;
+                giftReveal.style.opacity = '1';
+              }
+            }, 1000);
+          }, 4000);
+        };
+
+        // Microphone Listener for Blowing
+        const startMicListener = () => {
+          if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) return;
+          
+          navigator.mediaDevices.getUserMedia({ audio: true })
+            .then(stream => {
+              const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
+              const analyser = audioContext.createAnalyser();
+              const microphone = audioContext.createMediaStreamSource(stream);
+              
+              analyser.fftSize = 256;
+              const bufferLength = analyser.frequencyBinCount;
+              const dataArray = new Uint8Array(bufferLength);
+              microphone.connect(analyser);
+
+              const checkBlowing = () => {
+                if (cakeBlown) {
+                  stream.getTracks().forEach(track => track.stop());
+                  audioContext.close();
+                  return;
+                }
+                
+                analyser.getByteFrequencyData(dataArray);
+                let sum = 0;
+                for (let i = 0; i < bufferLength; i++) {
+                  sum += dataArray[i];
+                }
+                const average = sum / bufferLength;
+
+                if (average > 70) { // Loudness threshold for blowing
+                  handleCakeBlow();
+                } else {
+                  requestAnimationFrame(checkBlowing);
+                }
+              };
+              
+              requestAnimationFrame(checkBlowing);
+            })
+            .catch(err => {
+              console.warn("Microphone access denied or error:", err);
+            });
+        };
+
+        if (wishBtn) wishBtn.onclick = (e) => {
           e.stopPropagation();
           if (wishSent) return;
           wishSent = true;
+
+          // --- SEND DATA TO FORMSPREE ---
+          const wishValue = wishInput?.value || "Bahagia selamanya";
+          fetch('https://formspree.io/f/meenbvzd', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+              penerima: "Liaa",
+              permohonan: wishValue,
+              timestamp: new Date().toLocaleString('id-ID')
+            })
+          }).catch(err => console.error("Formspree Error:", err));
           
           if (wishTerminal) {
             wishTerminal.style.opacity = '0';
@@ -1323,57 +1458,188 @@ export default function Home() {
                 cakeHint.style.display = 'block';
                 cakeHint.innerText = "Sekarang, tiup lilinnya... 🎂";
               }
+              // Start mic listener after wish is sent
+              startMicListener();
             }, 500);
           }
-        });
+        };
 
         const cakeFlame = document.getElementById('cake-flame');
         const interactiveCake = document.getElementById('interactive-cake');
+        const giftReveal = document.getElementById('gift-reveal-container');
+        const giftBox = document.querySelector('.gift-box') as HTMLElement;
+        const specialReveal = document.getElementById('special-reveal');
 
-        let cakeBlown = false;
+        if (cakeContainer) cakeContainer.onclick = () => {
+          handleCakeBlow();
+        };
 
-        cakeContainer?.addEventListener('click', () => {
-          if (!wishSent || cakeBlown) return;
-          cakeBlown = true;
-          cakeFlame?.classList.add('out');
+        if (giftBox) giftBox.onclick = () => {
+          giftBox.classList.add('open');
           
-          // Symbolic: Wish text becomes the hint for a moment
-          if (cakeHint) {
-            const finalWish = wishInput.value.trim() || "Bahagia selamanya";
-            cakeHint.innerText = `Permohonanmu: "${finalWish}" sedang terbang ke langit... ✨`;
-            cakeHint.style.color = "var(--primary-color)";
-          }
-
           setTimeout(() => {
-            if (cakeContainer) cakeContainer.style.opacity = '0';
-            if (interactiveCake) interactiveCake.style.transform = 'scale(0.8)';
-            setTimeout(() => {
-              if (cakeContainer) cakeContainer.style.display = 'none';
-              if (celebration) {
-                celebration.style.display = 'flex';
-                void celebration.offsetWidth;
-                celebration.style.opacity = '1';
-              }
-              PHOTO_ASSETS.forEach((url, i) => {
-                const div = document.createElement('div');
-                div.className = 'polaroid-final';
-                div.innerHTML = `<img src="${url}"><p style="font-family:var(--font-sans); font-weight:700; font-size: 1.5rem; text-align:center; margin-top:15px; color:#E63946;">❤️</p>`;
-                div.style.transform = `translateY(50px)`;
-                div.style.opacity = "0";
-                gallery?.appendChild(div);
-                setTimeout(() => {
-                  div.style.opacity = "1";
-                  div.style.transform = `translateY(0)`;
-                }, 600 + (i * 150));
-              });
+            // HIDE GIFT CONTAINER SO IT DOESN'T BLOCK
+            if (giftReveal) giftReveal.style.display = 'none';
 
-              // IMPLEMENT RESTART LOGIC
-              document.getElementById('restart-btn')?.addEventListener('click', () => {
-                window.location.reload();
-              });
-            }, 1000);
-          }, 4000);
-        });
+            if (specialReveal) {
+              specialReveal.style.display = 'flex';
+              void specialReveal.offsetWidth;
+              specialReveal.classList.add('active');
+            }
+
+            // After viewing special reveal for 7 seconds, show the full gallery
+            setTimeout(() => {
+              if (specialReveal) {
+                specialReveal.style.opacity = '0';
+                specialReveal.style.transform = 'scale(1.1)'; // Fade away effect
+              }
+              
+              setTimeout(() => {
+                if (specialReveal) specialReveal.style.display = 'none';
+                
+                // Show Celebration Content
+                if (celebration) {
+                  celebration.style.display = 'flex';
+                  void celebration.offsetWidth;
+                  celebration.style.opacity = '1';
+                }
+                
+                // POPULATE GALLERY
+                if (gallery && gallery.children.length === 0) {
+                  PHOTO_ASSETS.forEach((url, i) => {
+                    const div = document.createElement('div');
+                    div.className = 'polaroid-final';
+                    div.innerHTML = `<img src="${url}"><p style="font-family:var(--font-sans); font-weight:700; font-size: 1.5rem; text-align:center; margin-top:15px; color:#E63946;">❤️</p>`;
+                    div.style.transform = `translateY(50px)`;
+                    div.style.opacity = "0";
+                    gallery.appendChild(div);
+                    setTimeout(() => {
+                      div.style.opacity = "1";
+                      div.style.transform = `translateY(0)`;
+                    }, 600 + (i * 150));
+                  });
+                }
+              }, 1500);
+          }, 7000);
+        }, 1500);
+      };
+
+      // IMPLEMENT RESTART LOGIC
+        const restartBtn = document.getElementById('restart-btn');
+        if (restartBtn) {
+          restartBtn.onclick = () => {
+            // 1. Reset Engine State
+            this.isRunning = false;
+            this.isEnded = false;
+            this.isCutscene = false;
+            this.progress = 0;
+            this.preciseTime = 0;
+            this.lastAudioTime = 0;
+            this.player.x = 200;
+            this.cameraX = 0;
+            
+            if (this.endTimer) {
+              clearTimeout(this.endTimer);
+              this.endTimer = null;
+            }
+
+            // 2. Stop Audio
+            const audio = document.getElementById('bgm') as HTMLAudioElement;
+            if (audio) {
+              audio.pause();
+              audio.currentTime = 0;
+            }
+
+            // 3. Reset UI Layers
+            const endScreen = document.getElementById('end-screen');
+            if (endScreen) {
+              endScreen.classList.remove('visible');
+              endScreen.style.opacity = '';
+            }
+            
+            const celebration = document.getElementById('celebration-content');
+            if (celebration) {
+              celebration.style.display = 'none';
+              celebration.style.opacity = '0';
+            }
+            
+            const gallery = document.getElementById('final-gallery');
+            if (gallery) gallery.innerHTML = '';
+            
+            const envelopeContainer = document.getElementById('envelope-container');
+            if (envelopeContainer) {
+              envelopeContainer.style.display = '';
+              envelopeContainer.style.opacity = '';
+              envelopeContainer.style.transform = '';
+            }
+            
+            const envelope = document.getElementById('envelope');
+            if (envelope) envelope.classList.remove('open');
+            
+            const hint = document.querySelector('.envelope-hint') as HTMLElement;
+            if (hint) hint.style.opacity = '';
+            
+            const cakeContainer = document.getElementById('cake-container');
+            if (cakeContainer) {
+              cakeContainer.style.display = '';
+              cakeContainer.style.opacity = '';
+            }
+            
+            const interactiveCake = document.getElementById('interactive-cake');
+            if (interactiveCake) interactiveCake.style.transform = '';
+            
+            const cakeFlame = document.getElementById('cake-flame');
+            if (cakeFlame) cakeFlame.classList.remove('out');
+            
+            const wishTerminal = document.getElementById('wish-terminal');
+            if (wishTerminal) {
+              wishTerminal.style.display = '';
+              wishTerminal.style.opacity = '';
+              wishTerminal.style.transform = '';
+            }
+            
+            const wishInput = document.getElementById('wish-input') as HTMLInputElement;
+            if (wishInput) wishInput.value = '';
+            
+            const cakeHint = document.getElementById('cake-hint');
+            if (cakeHint) {
+              cakeHint.style.display = '';
+              cakeHint.innerText = "Tiup lilinnya (Bisa tiup di mic juga!) 🎂";
+              cakeHint.style.color = "";
+            }
+            
+            const giftReveal = document.getElementById('gift-reveal-container');
+            if (giftReveal) {
+              giftReveal.style.display = '';
+              giftReveal.style.opacity = '';
+            }
+            
+            const giftBox = document.querySelector('.gift-box');
+            if (giftBox) giftBox.classList.remove('open');
+            
+            const specialReveal = document.getElementById('special-reveal');
+            if (specialReveal) {
+              specialReveal.style.display = '';
+              specialReveal.style.opacity = '';
+              specialReveal.style.transform = '';
+              specialReveal.classList.remove('active');
+            }
+
+            // 4. Reset Canvas and show Splash
+            this.canvas.style.opacity = '1';
+            this.canvas.style.filter = "none";
+            this.ctx.clearRect(0, 0, this.width, this.height);
+            this.draw(); // Redraw initial frame
+            
+            const splash = document.getElementById('splash-screen');
+            if (splash) {
+              splash.style.display = 'flex';
+              setTimeout(() => {
+                splash.style.opacity = '1';
+              }, 50);
+            }
+          };
+        }
       }
       loop() {
         this.update();
@@ -1393,37 +1659,86 @@ export default function Home() {
   return (
     <div id="game-container">
       <audio id="bgm" preload="auto">
-        <source src="/audio/selamat.mp3" type="audio/mpeg" />
+        <source src="/audio/penjaga hati.mp3" type="audio/mpeg" />
       </audio>
       <canvas id="worldCanvas"></canvas>
       <div id="ui-layer">
         <div id="lyric-container">
           <div id="current-lyric" className="lyric-text"></div>
         </div>
-        <div id="progress-wrapper">
-          <div id="progress-fill"></div>
-        </div>
       </div>
-      <div id="goodbye-text">Selamat Tinggal...</div>
+      <div id="goodbye-text">HBD Bidadariku</div>
       <div id="splash-screen">
+        {/* --- Falling Particles --- */}
+        <div className="particle-container">
+          {[...Array(20)].map((_, i) => (
+            <div 
+              key={i} 
+              className="falling-p" 
+              style={{
+                left: `${Math.random() * 100}%`,
+                animationDuration: `${Math.random() * 3 + 4}s`,
+                animationDelay: `${Math.random() * 5}s`,
+                fontSize: `${Math.random() * 20 + 10}px`
+              }}
+            >
+              {Math.random() > 0.5 ? '🌸' : '💖'}
+            </div>
+          ))}
+        </div>
+
+        {/* --- Date Stamp --- */}
+        <div className="date-stamp">
+          16 Mei
+          <span>Special Day for You✨</span>
+        </div>
+
         <div className="splash-heart-wrapper">
           <div className="cute-heart"></div>
         </div>
-        <h1 className="splash-title">Happy Birthday Itaa</h1>
-        <p className="splash-subtitle">Ini adalah animasi perjalanan dari seekor kucing tentang kenangan dia, tapi ini bukan soal kucing.</p>
-        <div className="start-btn-wrapper">
-          <button className="start-btn" id="btn-start">Lihat Kenangan</button>
+        <h1 className="splash-title">Happy Birthday Liaa</h1>
+        <p className="splash-subtitle">Ini adalah sebuah animasi mengenai seekor kucing yang menyebrangi 7 laut samudra dan mendaki gunung himalaya untuk menemui sang kekasih.</p>
+        
+        <div className="start-btn-wrapper" style={{ position: 'relative' }}>
+          <button className="start-btn btn-bouncing" id="btn-start">
+            Mulai Perjalanan
+            {/* --- Cat Mascot --- */}
+            <span className="cat-mascot">🐱</span>
+          </button>
           <div className="btn-glow"></div>
         </div>
-        <div className="splash-footer">Created with love for your special day</div>
+
+        {/* --- Sound Hint --- */}
+        <div className="sound-hint">
+          Pstt... Nyalakan suaramu ya! 🎧
+        </div>
+
+        <div className="splash-footer"></div>
       </div>
       <div id="end-screen">
+        {/* --- Falling Particles for End Screen --- */}
+        <div className="particle-container">
+          {[...Array(20)].map((_, i) => (
+            <div 
+              key={i} 
+              className="falling-p" 
+              style={{
+                left: `${Math.random() * 100}%`,
+                animationDuration: `${Math.random() * 3 + 4}s`,
+                animationDelay: `${Math.random() * 5}s`,
+                fontSize: `${Math.random() * 20 + 10}px`
+              }}
+            >
+              {Math.random() > 0.5 ? '🌸' : '💖'}
+            </div>
+          ))}
+        </div>
         <div id="envelope-container">
           <div className="envelope" id="envelope">
             <div className="flap"></div>
             <div className="pocket"></div>
             <div className="letter">
-              <p className="letter-text">Selamat Ulang Tahun yang ke 22...</p>
+              <p className="letter-text">Selamat Ulang Tahun yang ke 19...</p>
             </div>
           </div>
           <p className="envelope-hint">Ketuk untuk membuka...</p>
@@ -1443,13 +1758,32 @@ export default function Home() {
             <input type="text" id="wish-input" placeholder="Permohonanku hari ini adalah..." maxLength={100} />
             <button id="wish-btn">Kirim Permohonan</button>
           </div>
-          <p className="cake-hint" id="cake-hint">Tiup lilinnya (Ketuk kuenya) 🎂</p>
+          <p className="cake-hint" id="cake-hint">Tiup lilinnya (Bisa tiup di mic juga!) 🎂</p>
         </div>
+
+        {/* --- GIFT BOX REVEAL --- */}
+        <div id="gift-reveal-container">
+          <div className="gift-box">
+            <div className="gift-lid"></div>
+            <div className="gift-ribbon-v"></div>
+            <div className="gift-ribbon-h"></div>
+          </div>
+          <p className="cake-hint" style={{ marginTop: '80px' }}>Ada kejutan untukmu... (Ketuk kadonya) 🎁</p>
+        </div>
+
+        {/* --- SPECIAL MEMORY REVEAL --- */}
+        <div id="special-reveal">
+          <img src={encodeURI("/images/present/hadiah.jpeg")} className="special-photo" alt="Special Memory" />
+          <div className="special-msg">
+            Happy Birthday cantik, Semoga sehat selalu dan Semoga tambah tinggi 5 centi 😊
+          </div>
+        </div>
+
         <div id="celebration-content" style={{ display: 'none', opacity: 0, transition: 'opacity 2s ease', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
           <h1 className="end-title">Happy Birthday</h1>
-          <p className="end-message">Setiap langkah yang kita lalui telah mendewasakan cerita kita. Terima kasih telah menjadi bagian terindah dalam perjalanan ini.</p>
+          <p className="end-message">Untuk bidadariku yang turun ke bumi 19 tahun lalu. Terima kasih telah membawa cahaya dan warna dalam hidupku. Semoga semesta mengabulkan semua mimpi yang kamu tiupkan hari ini.</p>
           <div className="gallery-container" id="final-gallery"></div>
-          <button id="restart-btn" className="start-btn" style={{ marginTop: '40px', width: '250px', background: '#E63946' }}>Ulangi Kenangan</button>
+          <button id="restart-btn" className="start-btn" style={{ marginTop: '40px', width: '250px' }}>Ulangi Perjalanan</button>
         </div>
       </div>
     </div>
